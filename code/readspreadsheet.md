@@ -1,6 +1,6 @@
 # readspreadsheet.md
 
-Google Apps Script code to read the contents of a normal spreadsheet (active/only sheet, beginning at A1) efficiently.
+## Google Apps Script code to read the contents of a normal spreadsheet (active/only sheet, beginning at A1) efficiently.
 
 /**
  * @param {sheet} sheet - Google Sheet with data or header beginning at A1
