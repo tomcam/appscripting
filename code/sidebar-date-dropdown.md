@@ -64,11 +64,10 @@
 <script>
 /**
  * IMPORTANT! This is how to get values from the HTML form to google apps script code.
- * Function's name can be anything.
+ * You can rename this function and also the receiveFormValues() function.
  */
   function sendFormValueForGs() {
-    var filename=document.getElementById("filename").value;
-    google.script.run.receiveFormValues(filename);
+    google.script.run.receiveFormValues($('#query').val());
   }
   
   /* Dynamically display query based on dropdown choice */
@@ -78,10 +77,10 @@
 
 /**
  * Update a textbox containing the query dynamically.
+ * The query format in this case is to search by date in GMail
  */
 function getDropdownValues() {
     query = ('year: ' + $('#from-year').val() + 'month: ' + $('#from-month').val())
-    // $("label[for='info']").text(query);
     updateQuery($('#from-year').val(), $('#from-month').val(), $('#to-year').val(), $('#to-month').val());
 }
 
@@ -95,7 +94,6 @@ $(".watchDropdown").change(function (){
 $(document).ready(function(){
     // Can prefill values here
     $("label[for='info']").text('');
-    $("#filename").val('headerAnd3Rows') // headerAnd3Rows, q2q42018TEST2
     $('#query').val('');
     getDropdownValues();
 });
