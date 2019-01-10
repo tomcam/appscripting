@@ -12,10 +12,15 @@
  * the active sheet.
  * @param {string} msg - The text to write
  * @param {string} (optional) sheetName - The name of the sheet to write it to
- * @ todo Return something useful
  * @returns reference to the debug sheet
  */
 function dbgOut(msg,sheetName) {
+  // Also write to standard log
+  Logger.log(msg)
+  
+  // Preserve current sheet in case writing to the debug
+  // pane forces the sheet to be switched.
+  var currentSheet = SpreadsheetApp.getActiveSheet()
   
   // If user doesn't specify the name of a debug tab,
   // give it this value:
@@ -31,6 +36,9 @@ function dbgOut(msg,sheetName) {
   }
   // Write the date in column A, the message in column B.
   sheet.appendRow([new Date().toLocaleTimeString(),msg]);
+  
+  // Restore the previously active spreadsheet
+  SpreadsheetApp.setActiveSheet(currentSheet)
   return sheet;
-}
+
 ```
