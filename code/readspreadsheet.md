@@ -2,6 +2,7 @@
 
 ## Google Apps Script code to read the contents of a normal spreadsheet (active/only sheet, beginning at A1) efficiently.
 
+```js
 /**
  * @param {sheet} sheet - Google Sheet with data or header beginning at A1
  * @pre sheet should contain the contents of the active sheet, e.g. getActiveSpreadsheet().getActiveSheet()
@@ -20,4 +21,4 @@ function processSheet(sheet) {
     }
   }         
 }
-
+```
