@@ -2,7 +2,7 @@
 
 ## Logs to spreadsheet tab called 'DEBUG'. Creates sheet if necessary.
 
-```
+```js
 /**
  * Simple log written to a new tab called 'DEBUG'.
  * Write the time in one column and 
