@@ -20,7 +20,7 @@ but replace the `onOpen` function in `Code.gs` with this:
 /**
  * Built-in function that runs when a spreadsheet is loaded.
  */
-function onOpen() {
+function onOpen(e) {
     // Create a high-level menu named 'Sidebar'
     SpreadsheetApp.getUi()
         .createMenu('Time tracker') // **** OR DocumentApp.getUi().createAddonMenu() ????
