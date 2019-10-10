@@ -45,6 +45,7 @@ function onOpen(e) {
         .addItem('Show time tracker', 'showSidebar')
         // Attach it to the main menu bar.
         .addToUi();
+ }
 
 ```
 
