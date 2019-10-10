@@ -118,7 +118,7 @@ Add this to the file `Code.gs`:
 
 ## Create an HTML file for the form
 
-The sidebar is a custom FORM using HTML syntax.Start an HTML file:
+The sidebar is a custom form using HTML syntax. Start an HTML file:
 
 * From the **File** menu, choose **New**, then **HTML file**.
 
@@ -280,4 +280,8 @@ into the previous cell.
 ![A few rows added to the spreadsheet](./assets/img/sidebar-activity-logged.png)
 
 
+## Reference
 
+* [Code for this article](https://github.com/tomcam/appscripting/tree/master/docs/code/spreadsheet-sidebar1) 
+all in one place
+* [Dialogs and Sidebars in G Suite Documents](https://developers.google.com/apps-script/guides/dialogs)
