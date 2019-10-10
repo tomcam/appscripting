@@ -1,8 +1,8 @@
 # The Google Apps Script onOpen() event
 
 You'll normally want your custom form to appear when the user opens a spreadsheet.
-That action triggers the 'onOpen()' function. Normally that's the place to build
-a custom dialog but let's do the simplest possible thing. Everyone's first
+That action triggers the built-in 'onOpen()' function. Normally that's the place to build
+a sidebar in the form of a custom dialog but let's do the simplest possible thing. Everyone's first
 program is always the same: `hello, world.`
 
 ## Create a spreadsheet to show how the onOpen() event is triggered
@@ -42,6 +42,7 @@ To make sure the page reloads, it's best to close the spreadsheet document altog
 
 * Return to the [Sheets page](https://docs.google.com/spreadsheets/u/0/) and choose the spreadsheet you just created.
 
-After a few seconds, you'll see the message you created in a modal dialog that you can dismiss with the **OK** button it provides.
+Opening the sheet eventually results in the `onOpen()` function being triggered. After a few seconds, you'll see 
+your masterpiece come to live. The message you created appears in a modal dialog that you can dismiss with the **OK** button it provides.
 
 ![Image of the Google Apps Script ui.alert](./assets/img/google-apps-script-ui-alert.png)
