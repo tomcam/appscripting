@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <!-- Make it look Googly -->
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <!-- Give the UI a little breathing room -->
+    <style>form { margin-left: 1em; } button { margin-top: .5em; } .help { visibility: hidden; }</style>
+    </head>
+   <body>
+    <form>
+     <h3>Activity log</h3>
+     <!-- Single text box with OK button.
+     Enter text to be logged, and it will be passed 
+     pack to the server to be written to the spreadsheet
+     along with the current time. -->
+     <input type="text" 
+       id="activity-note"
+       tabindex="0"
+       aria-describedby="activity-note-description">
+     <div>
+      <!-- class=blue is supplied by ad-ons1.css -->
+      <button class="blue" 
+        id="ok-button" 
+        tabindex="1"
+        aria-describedby="ok-button-description"
+        >OK</button>
+     </div>
+    <form/>
+    <p id="activity-note-description" 
+        class="help">
+        Type in an activity to track</p>
+    <p id="ok-button-description" 
+        class="help">
+        Adds this note to the spreadsheet</p>
+   <body/>
+<html/>
+
+
+<!-- Use jquery to clarify and abridge Javascript code. --> 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+
+/**
+ * This jQuery() function runs when the page is finished loading.
+ * It is unsafe to start executing code before that moment.
+ * Think of it as the main event loop.
+ */
+$(function() {
+  // Attach a click handler to the button
+  // whose `id` element is `ok-button`. 
+  // There should be no other elements
+  // with that ID.
+  $('#ok-button').click(getActivityNote);
+});
+
+
+/**
+ * Called when the user clicks the OK button.
+ * This function could be called anything.
+ * Just make sure it matches the click() event
+ * code, which in this case only exists for
+ * the element named '#ok-button'.
+ * User-defined functions in your HTML 
+ * be named activityLog(). It becomes part of the 
+ * globally visible google.script.run object.
+ */
+ function getActivityNote() {
+  // Obtain the value of the text box whose
+  // `id` element was set to `description`.
+  // Send it to the server. If a function named
+  // activityLog() can be found in Code.gs or
+  // any other .gs files, it can use the
+  // description to add a new row to the spreadsheet.
+  // The function name activityLog() is user-defined
+  // and could be named anything you want.
+  google.script.run.activityLog($("#activity-note").val())
+  $("#activity-note").val("")
+}
+</script>
