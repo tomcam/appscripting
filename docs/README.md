@@ -1,8 +1,10 @@
-[Spreadsheet app run from sidebar](sssidebar.md)
+# Table of Contents
 
 * [The Google Apps Script onOpen() event](onopen.md)
+* [Spreadsheet app run from sidebar](spreadsheet-sidebar1.md)
 
 # Reference
+
 * Google's [Translate app example](https://developers.google.com/gsuite/add-ons/editors/docs/quickstart/translate)
 has an uninformative video with some very informative code.
 * [Dialogs and Sidebars in G Suite Documents](https://developers.google.com/apps-script/guides/dialogs)
