@@ -1,11 +1,21 @@
 # Google Apps Script Tutorial: Creating Time Tracker, a Spreadsheet sidebar app
 
-Most Apps Script programs start with some kind of user input. That normally requires a custom form.
-Custom forms use HTML and are translated into Javascript objects in Google Apps. This one will appear as a sidebar
-on a spreadsheet. It gets built automatically by the built-in 'onOpen()' function, whch is 
-triggered when the spreadsheet is first loaded.
+Google Apps Script is a big subject with a long history and very few complete tutorials. 
+I had a deceptively simple question that ended up as this article:
+what does a minimum, typical Google Apps Script program look like and what are current best practices? 
+All the existing tutorials I know about leave a huge amount unsaid, and work best if you 
+already know Apps Script.
 
-This tutorial shows you step by step how to create this simple activity tracker:
+Most Apps Script programs start with some kind of user input. That normally requires a custom form.
+Custom forms use HTML and are translated into Javascript objects in Google Apps, and they function
+very differently from the branded Google Forms. This app will appear as a sidebar
+on a spreadsheet. It gets built automatically by the built-in 'onOpen()' function, whch is 
+triggered when the spreadsheet is first loaded. When you choose it from the menu, the
+sidebar itself is created and displayed.
+
+This tutorial shows you step by step how to create the simple activity tracker shown below, which
+lets you jot down something you did, then timestamps it and appends both items to
+the end of a spreadsheet.
 
 ![The finished product: a spreadsheet app running in a sidebar](./assets/img/sidebar-activity-logged.png)
 
@@ -14,13 +24,14 @@ Features of the final product:
 * Written using Google's current best practices, with complete explanations each step of the way
 * Code is modular and uses JSDoc conventions
 * Supports ARIA accessibility features
-* Shows how to write server-side scripting code add a top-level menu item to the Spreadsheet service
-* Shows how to add a menu item to them menu
-* Includes a custom form using Google's style sheet. This is used to create the sidebar
+* Shows how to write server-side scripting code that adds a top-level menu item to the Spreadsheet service
+* Shows how to add a menu item to the menu
+* Includes a custom form using Google's own style sheet. This is used to create the sidebar
 * Shows how to obtain data from the HTML form and send it to the server-side script for processing
-* Time Tracker a real if minimal app. You just type into a textbox on the sidebar, choose **OK** or press Enter,
+* Time Tracker is a useful if minimal app. You just type into a textbox on the sidebar, choose **OK** or press Enter,
 and a new row is added to the spreadsheet. The first cell of the row gets the current
 time inserted automatically, and the second cell is your note.
+* Not counting comments, takes only about 15 lines of Javascript and 30 lines of HTML
 
 ## Write a function to build the sidebar when a user opens the spreadsheet
 
@@ -39,7 +50,7 @@ but replace the `onOpen` function in `Code.gs` with this:
 function onOpen(e) {
     // Create a high-level menu named 'Sidebar'
     SpreadsheetApp.getUi()
-        .createMenu('Time tracker') // **** OR DocumentApp.getUi().createAddonMenu() ????
+        .createMenu('Time tracker') 
         // Add a menu item called 'Show Sidebar'
         // that runs the function showSidebar.
         .addItem('Show time tracker', 'showSidebar')
@@ -49,10 +60,22 @@ function onOpen(e) {
 
 ```
 
+Called when the spreadsheet is lodaed, this function obtains a reference to the UI object, creates a custom
+menu with its own title and a single menu item, then attaches
+the new menu to to the spreadsheet's UI and
+displays it. When you choose the
+one menu item, a function called `showSidebar()` gets called.
+You can give that function any name.
+
+The `e` argument represents the event that triggered this function, in this case then `onOpen()`
+event. We don't need to use its properties.
+
 ## Write a function that executes when the menu item is chosen
 
 According to the `onOpen()` code, when the user chooses **Show time tracker**
-the function 'showSidebar()' runs. Let's add this to the file `Code.gs`:
+the function `showSidebar()` runs. `showSidebar()` is where the sidebar
+its self gets displayed.
+Let's add this function to the file `Code.gs`:
 
 ##### file: Code.gs
 ```js
@@ -279,6 +302,13 @@ into the previous cell.
 
 ![A few rows added to the spreadsheet](./assets/img/sidebar-activity-logged.png)
 
+Congratulations! You've built and run something in Google Apps Script that: 
+
+* Runs in the sidebar alongside the spreadsheet
+* has its own custom form UI written in HTML that lives in the sidebar
+* Allows you to enter datt in the form
+* Transmits that data to the server
+* And updates the spreadsheet based changes you made to the form 
 
 ## Reference
 
