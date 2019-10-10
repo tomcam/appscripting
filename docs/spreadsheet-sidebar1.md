@@ -11,6 +11,9 @@ This tutorial shows you step by step how to create this simple activity tracker:
 
 Features of the final product:
 
+* Written using Google's current best practices, with complete explanations each step of the way
+* Code is modular and uses JSDoc conventions
+* Supports ARIA accessibility features
 * Shows how to write server-side scripting code add a top-level menu item to the Spreadsheet service
 * Shows how to add a menu item to them menu
 * Includes a custom form using Google's style sheet. This is used to create the sidebar
