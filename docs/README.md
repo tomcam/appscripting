@@ -2,6 +2,7 @@
 
 * [The Google Apps Script onOpen() event](onopen.md)
 * [Spreadsheet app run from sidebar](spreadsheet-sidebar1.md)
+* [Killer Google Apps Script code snippets](snippets.md)
 
 # Reference
 
