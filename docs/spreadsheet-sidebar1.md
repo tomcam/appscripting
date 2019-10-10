@@ -5,6 +5,18 @@ Custom forms use HTML and are translated into Javascript objects in Google Apps.
 on a spreadsheet. It gets built automatically by the built-in 'onOpen()' function, whch is 
 triggered when the spreadsheet is first loaded.
 
+This tutorial shows you step by step how to create this simple activity tracker:
+
+![The finished product: a spreadsheet app running in a sidebar](./assets/img/sidebar-activity-logged.png)
+
+Features of the final product:
+
+* Shows how to add a top-level menu item to the Spreadsheet service
+* Shows how to add a menu item to them menu
+* Includes a custom form using Google's style sheet
+* Time Tracker a real if minimal app. You just type into a textbox on the sidebar, choose **OK** or press Enter,
+and a new row is added to the spreadsheet. The first cell of the row gets the current
+time inserted automatically, and the second cell is your note.
 
 ## Write a function to build the sidebar when a user opens the spreadsheet
 
