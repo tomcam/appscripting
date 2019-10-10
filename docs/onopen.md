@@ -35,3 +35,5 @@ To make sure the page reloads, it's best to close the spreadsheet document altog
 * Close the main spreadsheet tab, and the code editor will be dismissed.
 
 * Return to the [Sheets page](https://docs.google.com/spreadsheets/u/0/) and choose the spreadsheet you just created.
+
+![Image of the Google Apps Script ui.alert](.\assets/img/google-apps-script-ui-alert.png)
