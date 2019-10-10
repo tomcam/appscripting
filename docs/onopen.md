@@ -10,7 +10,7 @@ simply named `e` to `onOpen()` but you won't use it here.
 
 ## Create a spreadsheet to show how the onOpen() event is triggered
  
-* Click [Sheets](https://docs.google.com/spreadsheets/u/0/) link, and choose **Start a new spreadsheet**.
+* Choose this [Sheets](https://docs.google.com/spreadsheets/u/0/) link, and choose **Start a new spreadsheet**.
 
 * Choose `Untitled spreadsheet` and give it a new name, for example, the ever-creative `test`.
 
@@ -24,7 +24,9 @@ The editor appears and you're already in a file named `Code.gs` with some sample
 
 The first program is always the same: `hello, world.`
 
-* Add to the `Code.gs` file an `onOpen()` function.
+* Add to the `Code.gs` file an `onOpen()` function. **Warning** Make sure you include the
+comment as shown.
+
 ```js
 /**
  * @OnlyCurrentDoc
