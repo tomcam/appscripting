@@ -90,7 +90,8 @@ $(function() {
   // Attach a click handler to the button
   // whose `id` element is `ok-button`. 
   // There should be no other elements
-  // with that ID.
+  // with that ID. The click handler calls
+  // the user-defined named `getActivityNote()`.
   $('#ok-button').click(getActivityNote);
 });
 
@@ -119,5 +120,5 @@ $(function() {
 * From the **File** menu, choose **New**, then **HTML file**.
 
 
-## Attach an action to a button with Google Apps Script
+## Attach an action to a button using jQuery
 
