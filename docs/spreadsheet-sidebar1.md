@@ -11,9 +11,10 @@ This tutorial shows you step by step how to create this simple activity tracker:
 
 Features of the final product:
 
-* Shows how to add a top-level menu item to the Spreadsheet service
+* Shows how to write server-side scripting code add a top-level menu item to the Spreadsheet service
 * Shows how to add a menu item to them menu
-* Includes a custom form using Google's style sheet
+* Includes a custom form using Google's style sheet. This is used to create the sidebar
+* Shows how to obtain data from the HTML form and send it to the server-side script for processing
 * Time Tracker a real if minimal app. You just type into a textbox on the sidebar, choose **OK** or press Enter,
 and a new row is added to the spreadsheet. The first cell of the row gets the current
 time inserted automatically, and the second cell is your note.
