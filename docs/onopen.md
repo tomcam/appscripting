@@ -36,4 +36,4 @@ To make sure the page reloads, it's best to close the spreadsheet document altog
 
 * Return to the [Sheets page](https://docs.google.com/spreadsheets/u/0/) and choose the spreadsheet you just created.
 
-![Image of the Google Apps Script ui.alert](.\assets/img/google-apps-script-ui-alert.png)
+![Image of the Google Apps Script ui.alert](./assets/img/google-apps-script-ui-alert.png)
