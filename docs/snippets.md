@@ -10,3 +10,11 @@ element in each successive column.
 ```js
 SpreadsheetApp.getActiveSpreadsheet().getSheets()[0].appendRow(["cell A", "cell B"])
 ```
+
+## Display a message to the user from the spreadsheet
+
+This replaces the now-deprecated `Browser.MsgBox()`
+
+```js
+SpreadsheetApp.getUi().alert('hello, world.')
+```
