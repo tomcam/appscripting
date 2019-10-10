@@ -244,23 +244,23 @@ Both functions could be called anything. It's the programmer's choice.
 
 * Reopen the spreadsheet. You'll see the new **Time Tracker** menu in the main menu bar:
 
-![New menu named Time Tracker added to main menu bar](sidebar-menu-added.png)
+![New menu named Time Tracker added to main menu bar](./assets/img/sidebar-menu-added.png)
 
 
 * Choose the menu and you'll see its single item called **Show time tracker**:
 
-!["Show time tracker" menu item added to Time Tracker menu](sidebar-menu-opened.png)
+!["Show time tracker" menu item added to Time Tracker menu](./assets/img/sidebar-menu-opened.png)
 
 * After a view moments the sidebar is displayed:
 
-![Sidebar added to the spreadsheet](sidebar-displayed.png)
+![Sidebar added to the spreadsheet](./assets/img/sidebar-displayed.png)
 
 * Enter something into the textbox and choose **OK**.
 
 It appears in the spreadsheet, with the time automatically inserted
 into the previous cell.
 
-![A few rows added to the spreadsheet](sidebar-activity-logged.png)
+![A few rows added to the spreadsheet](./assets/img/sidebar-activity-logged.png)
 
 
 
