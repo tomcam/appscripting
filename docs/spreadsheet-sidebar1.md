@@ -287,7 +287,21 @@ Both functions could be called anything. It's the programmer's choice.
 ![New menu named Time Tracker added to main menu bar](./assets/img/sidebar-menu-added.png)
 
 
-* Choose the menu and you'll see its single item called **Show time tracker**:
+## Deal with authorization issues
+
+Google is serious about security. When you try to
+continue you get a moderately scary dialog:
+
+![google-app-authorizaton-required.png](./assets/img/google-app-authorizaton-required.png)
+
+* Since you know who you are and trust yourself deeply, click **Continue**.
+
+
+
+
+* Choose the menu and you'll 
+
+see its single item called **Show time tracker**:
 
 !["Show time tracker" menu item added to Time Tracker menu](./assets/img/sidebar-menu-opened.png)
 
