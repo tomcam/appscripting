@@ -36,8 +36,6 @@ function flashText(msg, title) {
 
 ### Reference
 
-* (toast)[https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#toastmsg]
-* (toast)[https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#toastmsg]
 * [toast(msg), toast(msg, title), toast(msg, title timeoutSeconds)](https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#toastmsg)
 
 
