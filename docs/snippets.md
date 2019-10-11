@@ -36,7 +36,8 @@ function flashText(msg, title) {
 
 ### Reference
 
-* (toast(msg), toast(msg, title), toast(msgm tutkem timeoutSeconds))[https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#toastmsg]
+* (toast(msg))[https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#toastmsg]
+
 
 ## Display a message to the user from the spreadsheet
 
