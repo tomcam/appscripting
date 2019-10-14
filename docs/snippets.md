@@ -14,7 +14,7 @@ SpreadsheetApp.getActiveSpreadsheet().getSheets()[0].appendRow(["cell A", "cell 
 ## Display a message to a debug log
 
 ```js
-**
+/**
  * Simple log written to a new tab called 'DEBUG'
  * created in the active sheet.
  * Write the time in one column and 
