@@ -317,7 +317,7 @@ see its single item called **Show time tracker**:
 It appears in the spreadsheet, with the time automatically inserted
 into the previous cell.
 
-![A few rows added to the spreadsheet](./assets/img/sidebar-activity-logged.png)
+![A few rows added to the spreadsheet](../assets/img/sidebar-activity-logged.png)
 
 Congratulations! You've built and run something in Google Apps Script that: 
 
