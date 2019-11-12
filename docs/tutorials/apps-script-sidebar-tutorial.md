@@ -1,5 +1,9 @@
 # Google Apps Script Tutorial: Creating Time Tracker, a Spreadsheet sidebar app
 
+![The finished product: a spreadsheet app running in a sidebar](assets/img/sidebar-activity-logged.png)
+![The finished product: a spreadsheet app running in a sidebar](/assets/img/sidebar-activity-logged.png)
+![The finished product: a spreadsheet app running in a sidebar](../assets/img/sidebar-activity-logged.png)
+
 Google Apps Script is a big subject with a long history and very few complete tutorials. 
 I had a deceptively simple question that ended up as this article:
 what does a minimum, typical Google Apps Script program look like and what are current best practices? 
