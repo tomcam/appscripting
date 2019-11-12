@@ -17,7 +17,7 @@ This tutorial shows you step by step how to create the simple activity tracker s
 lets you jot down something you did, then timestamps it and appends both items to
 the end of a spreadsheet.
 
-![The finished product: a spreadsheet app running in a sidebar](./assets/img/sidebar-activity-logged.png)
+![The finished product: a spreadsheet app running in a sidebar](/assets/img/sidebar-activity-logged.png)
 
 Features of the final product:
 
