@@ -1,7 +1,6 @@
 # Google Apps Script Tutorial: Creating Time Tracker, a Spreadsheet sidebar app
 
-![The finished product: a spreadsheet app running in a sidebar](assets/img/sidebar-activity-logged.png)
-![The finished product: a spreadsheet app running in a sidebar](/assets/img/sidebar-activity-logged.png)
+
 ![The finished product: a spreadsheet app running in a sidebar](../assets/img/sidebar-activity-logged.png)
 
 Google Apps Script is a big subject with a long history and very few complete tutorials. 
@@ -21,7 +20,7 @@ This tutorial shows you step by step how to create the simple activity tracker s
 lets you jot down something you did, then timestamps it and appends both items to
 the end of a spreadsheet.
 
-![The finished product: a spreadsheet app running in a sidebar](assets/img/sidebar-activity-logged.png)
+![The finished product: a spreadsheet app running in a sidebar](../assets/img/sidebar-activity-logged.png)
 
 Features of the final product:
 
@@ -288,7 +287,7 @@ Both functions could be called anything. It's the programmer's choice.
 
 * Reopen the spreadsheet. You'll see the new **Time Tracker** menu in the main menu bar:
 
-![New menu named Time Tracker added to main menu bar](./assets/img/sidebar-menu-added.png)
+![New menu named Time Tracker added to main menu bar](../assets/img/sidebar-menu-added.png)
 
 
 ## Deal with authorization issues
@@ -296,7 +295,7 @@ Both functions could be called anything. It's the programmer's choice.
 Google is serious about security. When you try to
 continue you get a moderately scary dialog:
 
-![google-app-authorizaton-required.png](./assets/img/google-app-authorizaton-required.png)
+![google-app-authorizaton-required.png](../assets/img/google-app-authorizaton-required.png)
 
 * Since you know who you are and trust yourself deeply, click **Continue**.
 
@@ -307,11 +306,11 @@ continue you get a moderately scary dialog:
 
 see its single item called **Show time tracker**:
 
-!["Show time tracker" menu item added to Time Tracker menu](./assets/img/sidebar-menu-opened.png)
+!["Show time tracker" menu item added to Time Tracker menu](../assets/img/sidebar-menu-opened.png)
 
 * After a view moments the sidebar is displayed:
 
-![Sidebar added to the spreadsheet](./assets/img/sidebar-displayed.png)
+![Sidebar added to the spreadsheet](../assets/img/sidebar-displayed.png)
 
 * Enter something into the textbox and choose **OK**.
 
